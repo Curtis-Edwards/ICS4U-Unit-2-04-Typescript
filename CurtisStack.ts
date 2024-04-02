@@ -58,7 +58,7 @@ export class CurtisStack {
   * clears the entire stack
   */
   public clear() {
-    this.strstack = []
+    this.stackAsList = []
   }
 
   /*
