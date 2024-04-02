@@ -26,7 +26,12 @@ export class CurtisStack {
   * return top item of stack
   */
   public get peak():string {
-    return self.strstack[self.strstack.length - 1]
+    if (this.stackAsList[0]) {
+      peakedItem = this.stackAsList[this.stackAsList.length - 1]
+    } else {
+      peakedItem = "nothing to peak"
+    }
+    return peakedItem
   }
 
   /*
